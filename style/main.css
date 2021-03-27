@@ -1,0 +1,102 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*série principal*/
+
+.serie-principal { 
+    font-size: 15px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa3-friends.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.serie-principal .descricao { 
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align:justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.titulo {
+    margin-top: 8%;
+    font-size: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /*o primeiro valor vale para cima e baixo, o segundo para as laterais. se colocar um único valor, valerá para os 4 lados. mais de 2.. assim vai.*/
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .7s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
